@@ -1,0 +1,41 @@
+$footer-height: 425px;
+
+body:after {
+  content: '';
+  height: $footer-height;
+  display: block;
+}
+
+.site-footer {
+  height: $footer-height;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+///////////////////////////////////////////// modals /////////////////////////////////////////
+.modal-open .site-header.header-fixed {
+  z-index: 1;
+}
+.modal-open .modal {
+  z-index: 100;
+}
+
+
+
+@media ($desktop) {
+
+}
+
+@media ($tablet) {
+
+}
+
+@media ($mobile) {
+  $footer-height: auto;
+
+}
+
+
